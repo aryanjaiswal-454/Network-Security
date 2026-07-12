@@ -8,4 +8,5 @@ pyyaml
 mlflow==2.16.0
 dill
 dnspython
+dagshub
 ##-e .

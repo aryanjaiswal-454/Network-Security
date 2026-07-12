@@ -23,6 +23,9 @@ from sklearn.ensemble import (
 
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='aryanjaiswal-454', repo_name='Network-Security', mlflow=True)
+
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
@@ -40,7 +43,7 @@ class ModelTrainer:
             mlflow.log_metric("f1_score",f1_score)
             mlflow.log_metric("precision_score",precision_score)
             mlflow.log_metric("recall_score",recall_score)
-            
+
             mlflow.sklearn.log_model(best_model,"model")
 
 
