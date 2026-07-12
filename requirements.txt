@@ -9,4 +9,6 @@ mlflow==2.16.0
 dill
 dnspython
 dagshub
+fastapi
+uvicorn
 ##-e .
