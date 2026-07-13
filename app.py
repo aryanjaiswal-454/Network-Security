@@ -69,7 +69,8 @@ async def predict_route(request:Request, file:UploadFile=File(...)):
         print(y_pred)
         df['predicted_column']=y_pred
         print(df['predicted_column'])
-        df.to_csv("./prediction_output/output.csv")
+        os.makedirs("prediction_output", exist_ok=True)
+        df.to_csv("prediction_output/output.csv", index=False)
         table_html=df.to_html(classes='table table-striped')
         return templates.TemplateResponse(request,"table.html", {"table":table_html})
     
@@ -78,4 +79,4 @@ async def predict_route(request:Request, file:UploadFile=File(...)):
 
 
 if __name__=="__main__":
-    app_run(app,host="localhost",port=8000)
+    app_run(app,host="0.0.0.0",port=8000)
