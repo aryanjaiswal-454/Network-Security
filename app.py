@@ -1,4 +1,4 @@
-import sys, os, certifi
+import sys, os, certifi, datetime
 
 ca = certifi.where()
 
@@ -25,6 +25,9 @@ client = pymongo.MongoClient(mongo_db_url, tlsCAFile=ca)
 
 from networksecurity.constant.training_pipeline import DATA_INGESTION_COLLECTION_NAME
 from networksecurity.constant.training_pipeline import DATA_INGESTION_DATABASE_NAME
+
+from networksecurity.cloud.s3_syncer import S3Sync
+from networksecurity.constant.training_pipeline import TRAINING_BUCKET_NAME
 
 database=client[DATA_INGESTION_DATABASE_NAME]
 collection = database[DATA_INGESTION_COLLECTION_NAME]
@@ -70,8 +73,21 @@ async def predict_route(request:Request, file:UploadFile=File(...)):
         print(y_pred)
         df['predicted_column']=y_pred
         print(df['predicted_column'])
+
         os.makedirs("prediction_output", exist_ok=True)
-        df.to_csv("prediction_output/output.csv", index=False)
+
+        output_path = "prediction_output/output.csv"
+        df.to_csv(output_path, index=False)
+
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+
+        aws_bucket_url = (
+            f"s3://{TRAINING_BUCKET_NAME}/prediction_output/{timestamp}/output.csv"
+        )
+
+        S3Sync().upload_file_to_s3(output_path, aws_bucket_url)
+        logging.info(f"Prediction uploaded to {aws_bucket_url}")
+        
         table_html=df.to_html(classes='table table-striped')
         return templates.TemplateResponse(request,"table.html", {"table":table_html})
     
