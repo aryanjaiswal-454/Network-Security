@@ -58,12 +58,8 @@ async def train_route():
         train_pipeline = TrainingPipeline()
         train_pipeline.run_pipeline()
         return Response("Training is successful")
-    except Exception:
-        import traceback
-
-        traceback.print_exc()
-
-        raise
+    except Exception as e:
+        raise NetworkSecurityException(e,sys)
     
 @app.post("/predict")
 async def predict_route(request:Request, file:UploadFile=File(...)):
@@ -91,7 +87,7 @@ async def predict_route(request:Request, file:UploadFile=File(...)):
 
         S3Sync().upload_file_to_s3(output_path, aws_bucket_url)
         logging.info(f"Prediction uploaded to {aws_bucket_url}")
-
+        
         table_html=df.to_html(classes='table table-striped')
         return templates.TemplateResponse(request,"table.html", {"table":table_html})
     
