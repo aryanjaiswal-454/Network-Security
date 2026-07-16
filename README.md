@@ -37,27 +37,53 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 - Logging & Exception Handling
 
 
-# 📸 Project Screenshots
+## 📸 Project Screenshots
+
+### Software Architecture
+
+<p align="center">
+  <img src="screenshots/architecture.jpg" width="100%">
+</p>
+
+---
+
+### CI/CD Pipeline (GitHub Actions)
+
+<p align="center">
+  <img src="screenshots/github-actions.jpg" width="100%">
+</p>
+
+---
+
+### MLflow Experiment Tracking (DagsHub)
+
+<p align="center">
+  <img src="screenshots/dagshub-mlflow.jpg" width="100%">
+</p>
+
+---
 
 ### FastAPI Swagger UI
 
-> *(Add Screenshot Here)*
+<p align="center">
+  <img src="screenshots/swagger-ui.jpg" width="100%">
+</p>
 
-### Project Folder Structure
+---
 
-> *(Add Screenshot Here)*
+### Amazon S3 Artifact & Model Storage
 
-### DagsHub MLflow Tracking
+<p align="center">
+  <img src="screenshots/s3-bucket.jpg" width="100%">
+</p>
 
-> *(Add Screenshot Here)*
+---
 
-### GitHub Actions CI/CD Pipeline
+### Amazon EC2 Deployment
 
-> *(Add Screenshot Here)*
-
-### AWS EC2 Deployment
-
-> *(Add Screenshot Here)*
+<p align="center">
+  <img src="screenshots/ec2-instance.jpg" width="100%">
+</p>
 
 ---
 
