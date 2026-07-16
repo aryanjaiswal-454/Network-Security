@@ -42,7 +42,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### Software Architecture
 
 <p align="center">
-  <img src="screenshots/architecture.jpg" width="100%">
+  <img src="Screenshots/architecture.jpg" width="100%">
 </p>
 
 ---
@@ -50,7 +50,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### CI/CD Pipeline (GitHub Actions)
 
 <p align="center">
-  <img src="screenshots/github-actions.jpg" width="100%">
+  <img src="Screenshots/github-actions.jpg" width="100%">
 </p>
 
 ---
@@ -58,7 +58,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### MLflow Experiment Tracking (DagsHub)
 
 <p align="center">
-  <img src="screenshots/dagshub-mlflow.jpg" width="100%">
+  <img src="Screenshots/dagshub-mlflow.jpg" width="100%">
 </p>
 
 ---
@@ -66,7 +66,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### FastAPI Swagger UI
 
 <p align="center">
-  <img src="screenshots/swagger-ui.jpg" width="100%">
+  <img src="Screenshots/swagger-ui.jpg" width="100%">
 </p>
 
 ---
@@ -74,7 +74,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### Amazon S3 Artifact & Model Storage
 
 <p align="center">
-  <img src="screenshots/s3-bucket.jpg" width="100%">
+  <img src="Screenshots/s3-bucket.jpg" width="100%">
 </p>
 
 ---
@@ -82,7 +82,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### Amazon EC2 Deployment
 
 <p align="center">
-  <img src="screenshots/ec2-instance.jpg" width="100%">
+  <img src="Screenshots/ec2-instance.jpg" width="100%">
 </p>
 
 ---
