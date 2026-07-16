@@ -74,7 +74,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### Amazon S3 Artifact & Model Storage
 
 <p align="center">
-  <img src="Screenshots/s3-bucket.jpg" width="100%">
+  <img src="Screenshots/s3-bucket.png" width="100%">
 </p>
 
 ---
@@ -82,7 +82,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ### Amazon EC2 Deployment
 
 <p align="center">
-  <img src="Screenshots/ec2-instance.jpg" width="100%">
+  <img src="Screenshots/ec2-instance.png" width="100%">
 </p>
 
 ---
