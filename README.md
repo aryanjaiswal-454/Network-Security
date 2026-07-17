@@ -349,5 +349,5 @@ FastAPI REST API
 Computer Science Engineering Student  
 Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur
 
-- 🔗 LinkedIn: :contentReference[oaicite:0]{index=0}
-- 💻 GitHub: :contentReference[oaicite:1]{index=1}
+- 🔗 **LinkedIn:** [Aryan Jaiswal](https://www.linkedin.com/in/aryan5178/)
+- 💻 **GitHub:** [aryanjaiswal-454](https://github.com/aryanjaiswal-454)
