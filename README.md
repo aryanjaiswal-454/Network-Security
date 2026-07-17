@@ -345,10 +345,9 @@ FastAPI REST API
 
 ## 👨‍💻 Author
 
-Aryan Jaiswal
+**Aryan Jaiswal**  
+Computer Science Engineering Student  
+Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur
 
-Computer Science Engineering Student
-
-Madan Mohan Malaviya University of Technology
-
-LinkedIn • GitHub
+- 🔗 LinkedIn: :contentReference[oaicite:0]{index=0}
+- 💻 GitHub: :contentReference[oaicite:1]{index=1}
