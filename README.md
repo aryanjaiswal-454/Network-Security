@@ -14,7 +14,7 @@ An end-to-end **Machine Learning & MLOps** project for detecting phishing websit
 ![Amazon ECR](https://img.shields.io/badge/AWS-ECR-FF9900?logo=amazonaws)
 ![Amazon S3](https://img.shields.io/badge/AWS-S3-569A31?logo=amazons3&logoColor=white)
 
-
+Demo Video: https://youtu.be/tjDm-z14DZU?si=O-yvsNm32N695OJK
 ---
 
 # ✨ Features
